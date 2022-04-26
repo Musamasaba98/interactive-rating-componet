@@ -1,0 +1,61 @@
+.rating{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 4rem 1.6rem;
+    
+    &__icon{
+        display: inline-block;
+        background-color: #262f38;
+        border-radius: 50%;
+        line-height: 3rem;
+        text-align: center;
+        min-width: 3rem;
+        min-height: 3rem;
+        margin-top: 1.8rem;
+    }
+    &__text{
+        margin-top: 1rem;
+        h2{
+            font-size: 2rem;
+        }
+    }
+    &__ratings{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1rem;
+        >span{
+            display: inline-block;
+            width: 3rem;
+            height: 3rem;
+            line-height: 3rem;
+            border-radius: 50%;
+            background: hsl(216, 12%, 27%);
+            color: var(--light-grey);
+            vertical-align: middle;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+    & button[type="submit"]{
+        display: block;
+        width: 100%;
+        background: transparent;
+        padding:.8rem 1.5rem;
+        background: $orange;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        border: 1px solid $orange;
+        text-transform: uppercase;
+        border-radius: 30rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        outline: none;
+    }
+}

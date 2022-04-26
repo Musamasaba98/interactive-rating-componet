@@ -4,5 +4,27 @@
     box-sizing: border-box;
 }
 body{
+    background-color: #141519;
     font-family: 'Overpass', sans-serif;
+    height: 100%;
+    color:$lightGrey;
+}
+h2{
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hidden{
+    display: none;
+}
+.container{
+    padding: 1rem 1.5rem;
+    background-color: #202731;
+    max-width:26.125rem;
+    min-height: 22.5rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    @include breakpoint-up(large){
+        margin: 10 auto;
+    }
 }
